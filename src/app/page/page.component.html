@@ -1,0 +1,24 @@
+<div class="para" *ngFor="let text of textToRender$ | async" [ngStyle]="{'font-size': fontSize+'pt'}">
+  <div class="lines">
+    <div class="v-line">
+      <div class="v-line-major" *ngFor="let g of vGrid"></div>
+    </div>
+    <div class="line-major">
+      <div class="line-minor"></div>
+    </div>
+  </div>
+  <div class="text" [ngStyle]="{'color': fontColor }">
+    <div class="block" *ngFor="let block of text"><span>{{block}}</span></div>
+  </div>
+</div>
+<!-- <p *ngFor="let text of textToRender$ | async" [ngStyle]="{
+  'font-size': fontSize+'pt',
+  'color': fontColor
+}">
+  <span class="line-major" *ngFor="let block of text">
+    <div class="lines">
+
+    </div>
+    {{block}}
+  </span>
+</p> -->

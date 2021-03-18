@@ -1,0 +1,39 @@
+:host {
+  display: grid;
+  grid-template-rows: 1fr 20em;
+}
+
+.page-container {
+  position: relative;
+  background: gray;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5in;
+}
+
+.inputs {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.screen-page {
+  position: absolute;
+  background: white;
+  margin: 0.5in;
+}
+
+.print {
+  display: none;
+}
+
+@media print {
+  .print {
+    display: block;
+  }
+
+  .screen {
+    display: none;
+  }
+}

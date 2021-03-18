@@ -1,0 +1,61 @@
+:host{
+  font-family: BriemLined;
+
+  /* A4 page dimensions */
+  height: 297mm;
+  width: 210mm;
+  padding: 0.5in;
+  display: block;
+}
+
+
+
+.para {
+  position: relative;
+  display: grid;
+  text-overflow: clip;
+  margin-bottom: 0.25em;
+}
+
+.lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.line-major {
+  border-width: 0.2pt 0;
+  border-color: #ee302d;
+  border-style: solid;
+  display: grid;
+  margin: 0.12em 0;
+}
+
+.v-line {
+  position: absolute;
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.v-line-major {
+  transform: skew(-3deg);
+  border-color: #cccccc;
+  border-style: dashed;
+  border-width: 0 0 0 0.2pt;
+}
+
+.line-minor {
+  border-width: 0.2pt 0 0.5pt 0;
+  border-color: #00b3ef;
+  border-style: solid;
+  margin: 0.21em 0;
+}
+
+.text {
+  z-index: 1;
+  display: grid;
+  grid-auto-flow: column;
+}

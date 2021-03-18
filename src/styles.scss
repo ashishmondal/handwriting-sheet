@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Briem;
+    src: url("assets/BriemHandwriting.ttf")  format("truetype");
+}
+
+@font-face {
+    font-family: BriemLined;
+    src: url("assets/BriemHandwriting.ttf")  format("truetype");
+}
+
+html {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 0; // 0 for grammerly
+}
+
+body {
+  display: grid;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+<div class="screen page-container">
+  <app-page class="screen-page" [text]="text" [fontSize]="fontSize" [fontColor]="fontColor"></app-page>
+</div>
+<div class="screen inputs">
+  <div>
+    <label>Font size</label>
+    <input type="number" [(ngModel)]="fontSize">
+    <span>pt</span>
+    <input type="color" [(ngModel)]="fontColor">
+  </div>
+  <textarea [(ngModel)]="text"></textarea>
+</div>
+<app-page class="print" [text]="text" [fontSize]="fontSize" [fontColor]="fontColor"></app-page>
